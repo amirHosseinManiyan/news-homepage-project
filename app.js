@@ -20,3 +20,11 @@ overlay.addEventListener("click", function() {
    overlay.classList.remove("active-overlay");
    document.body.classList.remove("body-active-menu");
 });
+
+window.addEventListener("resize", function() {
+   if (window.innerWidth >= 768) {
+      menu.classList.remove("active-menu");
+      overlay.classList.remove("active-overlay");
+      document.body.classList.remove("body-active-menu");
+   }
+});
